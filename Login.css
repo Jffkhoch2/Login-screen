@@ -1,3 +1,4 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +8,33 @@
 body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  color: #333;
 }
 
-.login-container {
-  background: rgba(255, 255, 255, 0.9);
+.main-content {
+  text-align: center;
+  color: white;
+}
+
+/* Login Popup */
+.login-popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
